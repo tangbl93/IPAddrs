@@ -1,6 +1,4 @@
 use_frameworks!
 target 'IPAddrs_Tests' do
   pod 'IPAddrs', :path => '../'
-  
-  
 end

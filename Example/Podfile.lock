@@ -1,0 +1,16 @@
+PODS:
+  - IPAddrs (1.0.0)
+
+DEPENDENCIES:
+  - IPAddrs (from `../`)
+
+EXTERNAL SOURCES:
+  IPAddrs:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  IPAddrs: 6bbf4210ce140856df24a9daf94e524bd51968df
+
+PODFILE CHECKSUM: 1f0bb2743543b69e878d8264e806ea8ce9a645f9
+
+COCOAPODS: 1.10.1

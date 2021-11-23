@@ -183,7 +183,23 @@
 - (void)reloadHOTSPOTData {
     // HOTSPOT_clients
     NSString *hotspotRegex = @"172.20.10.";
-    self.HOTSPOT_clients = [self searchARPClients:hotspotRegex];
+    NSArray *HOTSPOT_clients = [self searchARPClients:hotspotRegex];
+    
+    if (HOTSPOT_clients.count == 0 ||
+        (HOTSPOT_clients.count == 1 && [HOTSPOT_clients.firstObject isEqualToString:@"172.20.10.1"])) {
+        HOTSPOT_clients = @[
+            @"172.20.10.2",
+            @"172.20.10.3",
+            @"172.20.10.4",
+            @"172.20.10.5",
+            @"172.20.10.6",
+            @"172.20.10.7",
+            @"172.20.10.8",
+            @"172.20.10.9",
+            @"172.20.10.10",
+        ];
+    }
+    self.HOTSPOT_clients = HOTSPOT_clients;
 }
 
 # pragma mark - Utilities

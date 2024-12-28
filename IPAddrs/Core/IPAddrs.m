@@ -185,8 +185,8 @@
     NSString *hotspotRegex = @"172.20.10.";
     NSArray *HOTSPOT_clients = [self searchARPClients:hotspotRegex];
     
-    if (HOTSPOT_clients.count == 0 ||
-        (HOTSPOT_clients.count == 1 && [HOTSPOT_clients.firstObject isEqualToString:@"172.20.10.1"])) {
+//    if (HOTSPOT_clients.count == 0 ||
+//        (HOTSPOT_clients.count == 1 && [HOTSPOT_clients.firstObject isEqualToString:@"172.20.10.1"])) {
         HOTSPOT_clients = @[
             @"172.20.10.2",
             @"172.20.10.3",
@@ -208,7 +208,7 @@
             @"172.20.10.19",
             @"172.20.10.20",
         ];
-    }
+//    }
     self.HOTSPOT_clients = HOTSPOT_clients;
 }
 
